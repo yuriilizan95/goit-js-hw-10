@@ -55,6 +55,12 @@ startBtn.addEventListener('click', () => {
         if (deltaTime <= 0) {
             clearInterval(timerId);
             datetimePicker.disabled = false;
+
+            daysValue.textContent = '00';
+            hoursValue.textContent = '00';
+            minutesValue.textContent = '00';
+            secondsValue.textContent = '00';
+            
             return
         }
 
